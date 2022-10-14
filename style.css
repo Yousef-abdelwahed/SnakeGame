@@ -1,0 +1,46 @@
+/* to make grid system in middle of our scree*/
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(20, 20, 20);
+}
+#game-board{
+    background-color: #ffffffb2;
+    /*1% of viewport's smaller (vw or vh) dimension*/
+    height: 90vmin;
+    width: 100vmin;
+    display: grid;
+    grid-template-rows :repeat(21, 1fr);
+    grid-template-columns :repeat(21, 1fr);
+    
+}
+.snake{
+    background-color: hsl(200, 100%, 50%); ;
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+    border :.25vmin solid rgb(16, 16, 16);
+ }
+ .food{
+    background-color:hsl(50, 100%, 50%); ;
+    border :.25vmin solid rgb(154, 154, 154);
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+ }
+
+#game-over-text{
+    position: absolute;
+    height: 80vim;
+    width: 100vmin;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(243, 217, 217, 0.25);
+    font-family: "permanent Marker", cursive;
+    font-size: 10vmin;
+    color: rgb(57, 4, 4);
+    display:none ;
+}
