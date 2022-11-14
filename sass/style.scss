@@ -1,0 +1,117 @@
+$primary: rgb(0,132,255);
+$error: red;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+*{
+    box-sizing:border-box;
+};
+body{
+    font-family: 'Sono', sans-serif;
+    background-color: $primary;
+    font-size: 16px;
+}
+
+h1,h2{
+    padding: 0;
+    margin: 0;
+};
+.conatainer{
+    // max-width: 98vw;
+    margin :0 auto;
+    padding: 1rem;
+    background-color: #fff;
+    max-width: 98vw;
+}
+.text-center{
+    text-align: center;
+}
+.login{
+   .input-group{
+    .lable{
+        font-size: 20px;
+    }
+   }
+    
+    .conatainer{
+     max-width: 460px;
+        margin: 3rem auto;
+     padding: 2rem;
+        border: 1px solid #ddd;
+        border-radius: .25rem;
+        background-color: #fff;
+     }
+}
+
+.input{
+    font-size: 18px;
+    appearance: none;
+    display: block;
+    width: 100%;
+    color: #333;
+    border: 1px solid rgb(180, 180, 180);
+    padding: .5rem;
+    border-radius:.25rem;
+    &.input-error{
+        border:1px solid$error
+    }&:focus{
+        border:1px solid $error;
+    }
+}
+.error-message{
+    font-size: .85rem;
+    color: $error;
+}
+.button{
+    background-color: $primary;
+    padding: 1rem;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size:1rem;
+    &:hover{
+        filter: brightness(120%);
+    };
+};
+
+
+
+// border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+// padding:1em;
+// background-color: rgb(200 240 196 / 78%);
+// border:solid 5px hsla(0, 95%, 35%, 1);
+
+
+////  border:1px solid #ddd;
+    // border-radius: .25rem; 
+    // padding: 4rem 8rem;
+    // display: inline-block;
+    // border: 3px solid #333333;
+    // font-size: 2.5rem;
+    // border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    // text-transform: uppercase;
+    // letter-spacing: 0.3ch;
+//     background: #ffffff;
+//     position: relative;
+    
+//     &::before {
+//         content: '';
+//         border: 2px solid #353535;
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+//         border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    
+//     }
+   
+    
